@@ -26,7 +26,7 @@ register('tick', () => {
                 if (player.getUUID().version() === 4) { // check if player and not NPC
                     if (player.getName() != shooter.getName()) { // you cant team grief you self
                         if ((player.getZ() > 15 && shooter.getZ() > 15) || (player.getZ() < 15 && shooter.getZ() < 15)) { // teams
-                            // "raytrace" the arrow to see if it would hit the player
+                            // "raycast" the arrow to see if it would hit the player
                             velX = arrow.getX()-arrow.getLastX();
                             velY = arrow.getY()-arrow.getLastY();
                             velZ = arrow.getZ()-arrow.getLastZ();
